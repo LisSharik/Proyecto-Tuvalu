@@ -1,0 +1,64 @@
+.weather {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .weather_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .weather_content_card {
+    position: relative; /* para que el ::before se posicione dentro */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.5rem;
+    color: white;
+    overflow: hidden; /* para que el zoom no se salga */
+  }
+  
+  .weather_content_card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.4); /* oscurecer */
+    transition: transform 1.5s ease; /* animación más suave */
+    z-index: 0;
+  }
+  
+  .card_1::before {
+    background-image: url("/images/clima.jpg");
+  }
+  
+  .card_2::before {
+    background-image: url("/images/infraestructura.jpg");
+  }
+  
+  .weather_content_card h2,
+  .weather_content_card p {
+    position: relative; /* para estar sobre el ::before */
+    z-index: 1;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  .weather_content_card h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .weather_content_card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .weather_content_card:hover::before {
+    transform: scale(1.1); /* zoom suave */
+  }
+  

@@ -1,0 +1,123 @@
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 1rem 5%;
+    color: rgba(255, 255, 255, 0.815);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.menu h1 {
+    margin: 0;
+    transition: all 0.3s ease;
+    font-family: "Montez-Regular", cursive;
+    font-size: 2.5rem;
+}
+
+.menu .submenu {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.menu .submenu a {
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.menu .submenu a:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: scale(1.1);
+}
+
+.menu.scrolled {
+     flex-direction: row;
+     align-items: center;
+     height: 10%;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+}
+
+.menu.scrolled .submenu {
+    margin-top: 0;
+}
+
+/* Estilo botón hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        background-color: aqua;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .submenu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        gap: 1rem;
+        transform: translateY(-200%);
+        transition: transform 0.3s ease;
+    }
+
+    .submenu.show {
+        transform: translateY(0);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

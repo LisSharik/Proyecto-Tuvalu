@@ -1,0 +1,160 @@
+.nature {
+    width: 100%;
+    height: 160vh;
+    background-color: #f3e7db;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nature_content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.nature_row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nature_row h2 {
+    font-size: 2rem;
+    color: #41441c;
+    margin-bottom: 1rem;
+}
+
+.nature_row p {
+    color: #4d502c;
+    max-width: 800px;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* CAROUSEL */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden;  <-- IMPORTANTE: mantenemos visible la pista para scroll táctil */
+    padding: 0 2.5rem; /* deja espacio para botones */
+    box-sizing: border-box;
+}
+
+/* Pista: es la fila desplazable */
+.carousel-track {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.5rem 0;
+}
+
+/* esconder scrollbar (no obligatorio) */
+.carousel-track::-webkit-scrollbar {
+    height: 8px;
+}
+.carousel-track::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.12);
+    border-radius: 999px;
+}
+
+/* Card individual */
+.carousel_card {
+    flex: 0 0 calc(33.333% - 1rem);
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.carousel_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel_card p {
+    padding: 1rem;
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+    background: #fafafa;
+    margin: 0;
+}
+
+.carousel_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Botones */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #41441c;
+    color: white;
+    border: none;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.carousel-btn:hover {
+    transform: scale(1.05);
+    background: #5a5d2e;
+}
+
+.carousel-btn.prev {
+    left: 8px;
+}
+
+.carousel-btn.next {
+    right: 8px;
+}
+
+.carousel-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Responsive: 2 cards */
+@media (max-width: 768px) {
+    .carousel_card {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+/* Responsive: 1 card */
+@media (max-width: 480px) {
+    .carousel_card {
+        flex: 0 0 100%;
+    }
+
+    .carousel-wrapper {
+        padding: 0 1rem;
+    }
+
+    .carousel-btn.prev { left: 4px; }
+    .carousel-btn.next { right: 4px; }
+}

@@ -1,0 +1,45 @@
+.footer {
+    width: 100%;
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    
+}
+.row_1 {
+    width: 100%;
+}
+
+.footer_section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer_section h2 {
+    margin-bottom: 10px;
+}
+
+.footer_section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.references li {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.references a {
+    color: blue;
+    text-decoration: underline;
+}
