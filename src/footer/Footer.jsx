@@ -7,11 +7,11 @@ export function Footer() {
                 <div className="row_1">
                     <h2>Equipo 4</h2>
                     <ul className="team_list">
-                        <li>Nombre 1</li>
+                        <li>Valeria Rodas Rias</li>
                         <li>Lis Sharik Agudelo Tobón</li>
-                        <li>Nombre 3</li>
-                        <li>Nombre 4</li>
-                        <li>Nombre 5</li>
+                        <li>Laura Henao</li>
+                        <li>Valentina Galeano</li>
+                        <li>Ctistian Camilo Godoy Oquendo</li>
                     </ul>
 
                 </div>
