@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url("./images/background-country.webp") center / cover no-repeat;
+    url("/Proyecto-Tuvalu/images/background-country.webp") center / cover no-repeat;
   background-attachment: fixed;
   display: flex;
   justify-content: center;

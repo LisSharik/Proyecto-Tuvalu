@@ -34,11 +34,11 @@
   }
   
   .card_1::before {
-    background-image: url("./images/clima.jpg");
+    background-image: url("/Proyecto-Tuvalu/images/clima.jpg");
   }
   
   .card_2::before {
-    background-image: url("./images/infraestructura.jpg");
+    background-image: url("/Proyecto-Tuvalu/images/infraestructura.jpg");
   }
   
   .weather_content_card h2,
