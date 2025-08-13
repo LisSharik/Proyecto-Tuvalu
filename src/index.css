@@ -1,17 +1,17 @@
-
 @font-face {
   font-family: "Montez-Regular";
-  src: url('fonts/Montez-Regular.ttf') format('truetype');
+  src: url('/Proyecto-Tuvalu/fonts/Montez-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Oswald", sans-serif;
-  src: url('fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+  font-family: "Oswald";
+  src: url('/Proyecto-Tuvalu/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 
 :root {
   --secundary-color: #FEB966;
