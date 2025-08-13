@@ -5,7 +5,7 @@ export function Location() {
     <div id="location" className="location">
       <div className="location_content">
 
-        <img src="/images/tuvalu-map.png" alt="Mapa de Tuvalu" />
+        <img src="./images/tuvalu-map.png" alt="Mapa de Tuvalu" />
         <div className="location_content_text">
           <h2>Localización de Tuvalu</h2>
           <p>

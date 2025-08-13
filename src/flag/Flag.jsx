@@ -8,7 +8,7 @@ export function Flag() {
         <div className="flag_row">
           <div className="flag_col">
             <img
-              src="/images/tuvalu-flag.png"
+              src="./images/tuvalu-flag.png"
               alt="Bandera oficial de Tuvalu"
               className="flag_image"
             />
@@ -41,7 +41,7 @@ export function Flag() {
         <div className="flag_row reverse">
           <div className="flag_col">
             <img
-              src="/images/tuvalu-flag-new.jpg"
+              src="./images/tuvalu-flag-new.jpg"
               alt="Bandera rediseñada de Tuvalu"
               className="flag_image"
             />
@@ -80,7 +80,7 @@ export function Flag() {
           </div>
         </div>
       </div>
-      <img id="background_flag" src="/images/background-flag.png" alt="" />
+      <img id="background_flag" src="./images/background-flag.png" alt="" />
     </section>
   );
 }

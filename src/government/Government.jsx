@@ -22,7 +22,7 @@ export function Government() {
                 </div>
                 <div className="gov-image">
                     <img 
-                        src="/images/moneda.JPG" 
+                        src="./images/moneda.JPG" 
                         alt="Gobierno y economía de Tuvalu" 
                     />
                 </div>

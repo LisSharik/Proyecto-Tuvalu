@@ -4,27 +4,27 @@ import "@/Nature/Nature.css";
 export function Nature() {
   const fauna = [
     {
-      src: "/images/nature-images/rat.webp",
+      src: "./images/nature-images/rat.webp",
       alt: "Rata de la Polinesia",
       title: "Rata de la Polinesia",
     },
     {
-      src: "/images/nature-images/ballena.jpg",
+      src: "./images/nature-images/ballena.jpg",
       alt: "Tortuga marina",
       title: "Ballenas jorobadas",
     },
     {
-      src: "/images/nature-images/charran.jpg",
+      src: "./images/nature-images/charran.jpg",
       alt: "Pez tropical",
       title: "charrán",
     },
     {
-      src: "/images/nature-images/piquero.jpg",
+      src: "./images/nature-images/piquero.jpg",
       alt: "Ave marina",
       title: "Piquero patirrojo",
     },
     {
-      src: "/images/nature-images/tiñosa.webp",
+      src: "./images/nature-images/tiñosa.webp",
       alt: "Cangrejo de coco",
       title: "La tiñosa menuda",
     },
@@ -33,32 +33,32 @@ export function Nature() {
 
   const flora = [
     {
-      src: "/images/nature-images/cocotero.jpg",
+      src: "./images/nature-images/cocotero.jpg",
       alt: "Cocotero",
       title: "La palma de coco ",
     },
     {
-      src: "/images/nature-images/pandanus.jpg",
+      src: "./images/nature-images/pandanus.jpg",
       alt: "Pandanus",
       title: "El hala (Pandanus tectorius)",
     },
     {
-      src: "/images/nature-images/hibisco.jpg",
+      src: "./images/nature-images/hibisco.jpg",
       alt: "Hibisco",
       title: "Hibisco",
     },
     {
-      src: "/images/nature-images/plumeria.jpg",
+      src: "./images/nature-images/plumeria.jpg",
       alt: "Plumeria rubra",
       title: "Plumeria rubra",
     },
     {
-      src: "/images/nature-images/campanilla.jpg",
+      src: "./images/nature-images/campanilla.jpg",
       alt: "campanilla de playa.",
       title: "Campanilla de playa",
     },
-    { src: "/images/nature-images/pulaka.jpg", alt: "pulaka", title: "Pulaka" },
-    { src: "/images/nature-images/pan.jpg", alt: "Árboles del pan", title: "Árboles del pan" },
+    { src: "./images/nature-images/pulaka.jpg", alt: "pulaka", title: "Pulaka" },
+    { src: "./images/nature-images/pan.jpg", alt: "Árboles del pan", title: "Árboles del pan" },
   ];
 
   return (
